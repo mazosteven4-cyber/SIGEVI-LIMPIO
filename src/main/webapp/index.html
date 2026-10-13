@@ -1,0 +1,40 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGEVI - Gestión de inventario</title>
+</head>
+<body>
+    <h1>SIGEVI - Sistema de Gestión de Inventario</h1>
+
+    <h2>Registrar producto</h2>
+    <form action="producto" method="post">
+        <label>Nombre:
+            <input type="text" name="nombre" maxlength="100" required>
+        </label><br><br>
+
+        <label>Precio:
+            <input type="number" name="precio" min="0.01"
+                   step="0.01" required>
+        </label><br><br>
+
+        <label>Cantidad:
+            <input type="number" name="cantidad" min="0"
+                   step="1" required>
+        </label><br><br>
+
+        <button type="submit">Registrar producto</button>
+    </form>
+
+    <h2>Consultar producto</h2>
+    <form action="producto" method="get">
+        <label>ID del producto:
+            <input type="number" name="id" min="1" required>
+        </label>
+        <button type="submit">Consultar</button>
+    </form>
+</body>
+</html>
+```
